@@ -8,16 +8,26 @@
             <p>joepayne123@hotmail.com</p>
         </div>
         <div class="col-md-6 p-5">
-          <form
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            >
-            <input type="email" class="form-control" name="email" id="email" placeholder="email">
-            <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea>
-            <button>Submit</button>
-        </form>
+          <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
         </div>
         </div>
     </div>
