@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div class="container">
     <div class="row hero py-5">
     <div class="col-md-12">
       <div class="row align-middle py-5">
@@ -19,6 +19,7 @@
 import Sliderone from '../components/Slider/Sliderone'
 export default {
   name: 'Home',
+  title: 'Meopham plant hire.co.uk',
   components : {
     Slider : Sliderone
   }

@@ -25,8 +25,8 @@ export default {
       center: [51.347670, 0.357530],
       circle: {
         center: [51.347670, 0.357530],
-        radius: 16,
-        color: 'yellow'
+        radius: 6,
+        color: 'red'
       },
     };
   }

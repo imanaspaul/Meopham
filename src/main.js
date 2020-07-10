@@ -4,6 +4,11 @@ import router from './router'
 import 'leaflet/dist/leaflet.css';
 Vue.config.productionTip = false
 
+import titleMixin from '../src/mixins/titleMixin'
+Vue.mixin(titleMixin)
+
+
+
 new Vue({
   router,
   render: h => h(App)

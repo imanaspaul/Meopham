@@ -1,5 +1,5 @@
 <template>
-  <div class="about text-center py-5">
+  <div class="about text-center py-5 container">
     <h1 class="hero-title">Prices-Rates</h1>
     <p>Our rates consist of:</p>
 ​

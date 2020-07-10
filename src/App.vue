@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="container" id="app">
     <header class="row">
       <div class="logo text-center py-3 col-md-12">
@@ -33,8 +34,9 @@
       </nav>
       </nav>
     </header>
+  </div>
     <transition name="fade">
-    <router-view/>
+      <router-view/>
     </transition>
   </div>
 </template>
