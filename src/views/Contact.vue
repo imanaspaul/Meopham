@@ -8,26 +8,11 @@
             <p>joepayne123@hotmail.com</p>
         </div>
         <div class="col-md-6 p-5">
-          <form
-    name="ask-question"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    >
-    <input type="hidden" name="form-name" value="ask-question" />
-    <label v-for="(panelist, index) in panelists" :key="index">
-      <input
-        type="radio"
-        name="panelist"
-        :value="panelist"
-        @input="ev => updatePanelist"
-        :checked="panelist === currentPanelist"
-      />
-      <span>{{ panelist }}</span>
-    </label>
-    ...
-    <button>Submit</button>
-  </form>
+          <input type="text" name="name" id="" placeholder="name" class="form-control mb-5">
+          <input type="email" name="email" id="" placeholder="email" class="form-control mb-5">
+          <input type="text" name="subject" id="" placeholder="subject" class="form-control mb-5">
+          <textarea name="message" id="message" cols="30" rows="10" class="form-control mb-5"></textarea>
+          <button class="btn btn-warning">Submit</button>
         </div>
         </div>
     </div>
@@ -39,17 +24,6 @@ import Mapone from '../components/Maps/Mapone'
 export default {
     components : {
         Mapone
-    },
-    methods: {
-    updatePanelist (ev) {
-      this.currentPanelist = ev.target.value
     }
-  },
-  data () {
-    return {
-      panelists: ['Evan You', 'Chris Fritz'],
-      currentPanelist: 'Evan You'
-    }
-  }
 }
 </script>
