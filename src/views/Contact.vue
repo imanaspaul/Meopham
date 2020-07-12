@@ -8,11 +8,21 @@
             <p>joepayne123@hotmail.com</p>
         </div>
         <div class="col-md-6 p-5">
-          <input type="text" name="name" id="" placeholder="name" class="form-control mb-5">
-          <input type="email" name="email" id="" placeholder="email" class="form-control mb-5">
-          <input type="text" name="subject" id="" placeholder="subject" class="form-control mb-5">
-          <textarea name="message" id="message" cols="30" rows="10" class="form-control mb-5"></textarea>
-          <button class="btn btn-warning">Submit</button>
+            <h4>Feel free to contact us</h4>
+          <form
+            action="https://formspree.io/myynbzbk"
+            method="POST"
+            >
+
+                <input type="text" name="_replyto" placeholder="email" class="form-control mb-2">
+
+                <textarea name="message" placeholder="messages" class="form-control mb-2"></textarea>
+  
+
+            <!-- your other form fields go here -->
+
+            <button type="submit" class="form-control btn btn-warning">Send</button>
+            </form>
         </div>
         </div>
     </div>

@@ -28,9 +28,9 @@
           </ul>
           
         </div>
-        <nav class="nav">
-        <a class="nav-link" href="#">07718915718</a>
-        <a class="nav-link" href="#">01474 812749</a>
+        <nav class="navbar ">
+        <a class="nav-link" href="https://www.facebook.com/meophamplanthire/" target="_blank" ><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" width="30"/></a>
+        <router-link class="nav-link" to="#">07718915718 / 07718915718</router-link>
       </nav>
       </nav>
     </header>
@@ -38,6 +38,11 @@
     <transition name="fade">
       <router-view/>
     </transition>
+    <footer class="footer container mt-auto py-3 bg-dark">
+  <div class="text-center">
+    <span class="text-muted">&copy; {{ new Date().getFullYear() }} by meophamplanthire</span>
+  </div>
+</footer>
   </div>
 </template>
 
@@ -67,5 +72,9 @@ body{
 }
 .title{
   color: #000!important;
+}
+.bg-dark{
+  background-color: #000!important;
+  color: #fff!important;
 }
 </style>
